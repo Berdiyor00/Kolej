@@ -46,7 +46,7 @@ function App() {
         <Route path='/turarjoy' element={<Turarjoy/>}/>
         <Route path='/news' element={<AllNews/>}/>
       </Routes>
-      <footer className='w-[100%] h-[300px] bg-[red] '>
+      <footer className='w-[100%] h-[300px] bg-[red] mt-[70px] '>
                 <div className="container">
                     <h1>Hello</h1>
                 </div>

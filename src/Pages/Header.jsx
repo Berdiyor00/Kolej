@@ -1,8 +1,7 @@
 import React from 'react';
-import Dropdown from 'react-bootstrap/Dropdown';
-import DropdownButton from 'react-bootstrap/DropdownButton';
+
 import Typed from 'typed.js'; // Corrected import statement for Typed
-import Kolej from "../assets/kolejs.jpg";
+
 import Oshpaz from "../assets/oshpaz.jpg";
 import Svarka from "../assets/svarka.jpg";
 import Gaz from "../assets/gaz.jpg";
@@ -16,6 +15,7 @@ import Bank from "../assets/bank.png";
 import Icons from '../Components/Icons';
 import Yangiliklar from "./Yangiliklar"
 import { NavLink } from 'react-router-dom';
+
 
 
 
@@ -195,7 +195,9 @@ ustasi
             <Yangiliklar/>
           </div>
         </section>
-      
+      <section >
+    
+      </section>
         
       </main>
     </>
