@@ -17,11 +17,6 @@ import Yangiliklar from "./Yangiliklar"
 import { NavLink } from 'react-router-dom';
 
 
-
-
-
-
-
 function ButtonDarkExample() {
 
   const el = React.useRef(null);
@@ -68,8 +63,11 @@ function ButtonDarkExample() {
 <div className="relative group cursor-pointer">
 
   <img src={Oshpaz} alt="Your Image" className="w-[300px] rounded  object-cover h-[350px]"/>
-  <div className="absolute inset-0 bg-black bg-opacity-60 text-white opacity-0 group-hover:opacity-100 transition-[1s] flex items-center justify-center">
+  <div className="absolute inset-0 bg-black bg-opacity-60 text-white opacity-0 group-hover:opacity-100 transition-[1s] flex flex-col items-center justify-center">
     <p className='font-mono text-[28px]'>Oshpaz qandolatchi</p>
+    <button className="border text-center w-[120px] mt-[20px]">
+      Yana...
+    </button>
   </div>
 </div>
   </NavLink>
@@ -80,8 +78,11 @@ function ButtonDarkExample() {
 
 <div className="relative group cursor-pointer">
   <img src={Svarka} alt="Your Image" className="w-[300px] rounded object-cover h-[350px]"/>
-  <div className="absolute inset-0 bg-black bg-opacity-80 text-white opacity-0 group-hover:opacity-100 transition-[1s] flex items-center justify-center">
+  <div className="absolute inset-0 bg-black bg-opacity-80 text-white opacity-0 group-hover:opacity-100 transition-[1s] flex  flex-col items-center justify-center">
     <p className=' text-center font-mono text-[24px]'>Payvandlovchi (elektrgazpayvandlash ishlari)</p>
+    <button className="border text-center w-[120px] mt-[20px]">
+      Yana...
+    </button>
   </div>
 </div>
             </div>
@@ -92,8 +93,11 @@ function ButtonDarkExample() {
 
 <div className="relative group cursor-pointer">
   <img src={Gaz} alt="Your Image" className="w-[300px] rounded object-cover h-[350px]"/>
-  <div className="absolute inset-0 bg-black bg-opacity-70 text-white opacity-0 group-hover:opacity-100 flex items-center justify-center">
+  <div className="absolute inset-0 bg-black bg-opacity-70 text-white opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center">
     <p  className=' text-center font-mono text-[24px]'>Gaz jihozlari chilangari</p>
+    <button className="border text-center w-[120px] mt-[20px]">
+      Yana...
+    </button>
   </div>
 </div>
             </div>
@@ -104,8 +108,11 @@ function ButtonDarkExample() {
 
 <div className="relative group cursor-pointer">
   <img src={Tikuvchi} alt="Your Image" className="w-[300px] rounded object-cover h-[350px]"/>
-  <div className="absolute inset-0 bg-black bg-opacity-70  text-white opacity-0 group-hover:opacity-100 flex items-center justify-center">
+  <div className="absolute inset-0 bg-black bg-opacity-70  text-white opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center">
     <p className=' text-center font-mono text-[24px]'>Tikuvchi</p>
+    <button className="border text-center w-[120px] mt-[20px]">
+      Yana...
+    </button>
   </div>
 </div>
             </div>
@@ -116,10 +123,13 @@ function ButtonDarkExample() {
 
 <div className="relative group">
   <img src={Dasturchi} alt="Your Image" className="w-[300px] rounded object-cover h-[350px]"/>
-  <div className="absolute inset-0 bg-black bg-opacity-70  text-white opacity-0 group-hover:opacity-100 flex items-center justify-center">
+  <div className="absolute inset-0 bg-black bg-opacity-70  text-white opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center">
     <p className=' text-center font-mono text-[24px]'>Raqamli axborotlarni qayta ishlash 
 ustasi
 </p>
+<button className="border text-center w-[120px] mt-[20px]">
+      Yana...
+    </button>
   </div>
 </div>
             </div>
@@ -130,8 +140,11 @@ ustasi
 
 <div className="relative group cursor-pointer">
   <img src={Tokar} alt="Your Image" className="w-[300px] rounded object-cover h-[350px]"/>
-  <div className="absolute inset-0 bg-black bg-opacity-80 text-white opacity-0 group-hover:opacity-100 flex items-center justify-center">
+  <div className="absolute inset-0 bg-black bg-opacity-80 text-white opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center">
     <p className=' text-center font-mono text-[24px]'>Tokar</p>
+    <button className="border text-center w-[120px] mt-[20px]">
+      Yana...
+    </button>
   </div>
 </div>
             </div>
@@ -142,8 +155,11 @@ ustasi
 
 <div className="relative group cursor-pointer">
   <img src={Traktor} alt="Your Image" className="w-[300px] rounded object-cover h-[350px]"/>
-  <div className="absolute inset-0 bg-black bg-opacity-80 text-white opacity-0 group-hover:opacity-100 flex items-center justify-center">
+  <div className="absolute inset-0 bg-black bg-opacity-80 text-white opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center">
     <p className=' text-center font-mono text-[24px]'>Traktorchi-mashinist</p>
+    <button className="border text-center w-[120px] mt-[20px]">
+      Yana...
+    </button>
   </div>
 </div>
             </div>
@@ -154,8 +170,11 @@ ustasi
 
 <div className="relative group cursor-pointer">
   <img src={Prava} alt="Your Image" className="w-[300px] rounded object-cover h-[350px]"/>
-  <div className="absolute inset-0 bg-black bg-opacity-80 text-white opacity-0 group-hover:opacity-100 flex items-center justify-center">
+  <div className="absolute inset-0 bg-black bg-opacity-80 text-white opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center">
     <p  className=' text-center font-mono text-[24px]'>Avtomobil dvigatellarini tashxislashva ta’mirlash</p>
+    <button className="border text-center w-[120px] mt-[20px]">
+      Yana...
+    </button>
   </div>
 </div>
             </div>
@@ -166,9 +185,13 @@ ustasi
 
 <div className="relative group">
   <img src={Turarjoy} alt="Your Image" className="w-[300px] rounded object-cover h-[350px]"/>
-  <div className="absolute inset-0 bg-black bg-opacity-80 text-white opacity-0 group-hover:opacity-100 flex items-center justify-center">
+  <div className="absolute inset-0 bg-black bg-opacity-80 text-white opacity-0 group-hover:opacity-100  flex flex-col items-center justify-center">
     <p  className=' text-center font-mono text-[24px]'>Turar-joy kommunal xo’jaligi ustasi</p>
+    <button className="border text-center w-[120px] mt-[20px]">
+      Yana...
+    </button>
   </div>
+
 </div>
             </div>
             </NavLink>
@@ -195,8 +218,22 @@ ustasi
             <Yangiliklar/>
           </div>
         </section>
-      <section >
-    
+      <section className='w-[100%] bg-sky-500'>
+    <div className="container">
+      <div className="flex ">
+        
+<img src="" alt="img" />
+<div className="flex flex-col ">
+<h1>
+  Direktor virtual qabulxonasi
+</h1>
+<p>
+Ariza, shikoyat, taklif yoki fikrlaringiz bormi?
+</p>
+</div>
+
+      </div>
+    </div>
       </section>
         
       </main>

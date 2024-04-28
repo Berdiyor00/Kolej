@@ -9,7 +9,7 @@ const NavLinks = () => {
   return (
     <>
       {links.map((link,index) => (
-        <div key={index}>
+        <div key={index} className="pt-[20px] text-[#fff]">
           <div className="px-3 text-left md:cursor-pointer group">
             <h1 
               className="py-7 flex justify-between items-center md:pr-0 pr-5 group borders"
@@ -64,28 +64,26 @@ const NavLinks = () => {
           >
             {/* sublinks */}
             {link.sublinks.map((slinks) => (
-              <div className="text-[#000]">
-                <div className="text-[#000]">
-                  <LuPanelBottomClose
-                    onClick={() =>
+   
+                <div className="text-[#ffffff]">
+                  <button className="open-file mt-[20px]"     onClick={() =>
                       subHeading !== slinks.Head
                         ? setSubHeading(slinks.Head)
                         : setSubHeading("")
-                    }
-                    className="py-4 pl-7 icons cursor-pointer font-semibold text-[#000] flex justify-between bg- items-center md:pr-0 pr-5"
-                  >
-                    {slinks.Head}
-
-                    <span className="text-xl  md:mt-1 md:ml-2 flex">
-                      <ion-icon
-                        name={`${
-                          subHeading === slinks.Head
-                            ? "chevron-up"
-                            : "chevron-down"
-                        }`}
-                      ></ion-icon>
-                    </span>
-                  </LuPanelBottomClose>
+                    }>
+  <span className="file-wrapper">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 71 67">
+      <path
+        stroke-width="5"
+        stroke="black"
+        d="M41.7322 11.7678L42.4645 12.5H43.5H68.5V64.5H2.5V2.5H32.4645L41.7322 11.7678Z"
+      ></path>
+    </svg>
+    <span class="file-front"></span>
+  </span>
+Menu
+</button>
+                 
                   <div
                     className={`${
                       subHeading === slinks.Head ? "md:hidden" : "hidden"
@@ -98,7 +96,7 @@ const NavLinks = () => {
                     ))}
                   </div>
                 </div>
-              </div>
+          
             ))}
           </div>
         </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
 import './App.css';
 import YourComponent from "./Components/YourComponent"
 import Home from "./Pages/Header"
@@ -20,9 +20,14 @@ import Traktorchi from './Pages/Traktorchi';
 import Prava from './Pages/Prava';
 import Turarjoy from './Pages/Turarjoy';
 import AllNews from './Pages/AllNews';
+import Logo from "./assets/logo.jpg";
 
 
 function App() {
+  const newdate=new Date()
+  const year = newdate.getFullYear();
+  
+ 
   return (
     <BrowserRouter>
       <Navbar/>
@@ -48,7 +53,51 @@ function App() {
       </Routes>
       <footer className='w-[100%] h-[300px] bg-[red] mt-[70px] '>
                 <div className="container">
-                    <h1>Hello</h1>
+                  <div className="flex">
+                    
+                  <div className="flex flex-col items-center">
+                   <img src={Logo} alt="" className='md:cursor-pointer w-[100px] rounded-[50%] ' />
+                   <h2>Koson tuman 1-sonli kasb hunar maktabi</h2>
+                  </div>
+                  <div className="flex flex-col">
+                    <p className='text-[24px]'>
+                      Sahifalar
+                    </p>
+<ul>
+  <li>
+    <NavLink to='/tarix'>
+      Kasb-Hunar Maktabi
+    </NavLink>
+  </li>
+  <li>
+    <NavLink to='/raxbariyat'>
+     Tuzulma
+    </NavLink>
+  </li>
+  <li>
+    <NavLink>
+    Faoliyat
+    </NavLink>
+  </li>
+  <li>
+    <NavLink>
+   Qabul-{year}
+    </NavLink>
+  </li>
+  <li>
+    <NavLink>
+    Talabalar
+    </NavLink>
+  </li>
+  <li>
+    <NavLink>
+ Interaktiv xizmatlar
+    </NavLink>
+  </li>
+</ul>
+                  </div>
+
+                  </div>
                 </div>
             </footer>
     </BrowserRouter>
