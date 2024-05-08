@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Typed from 'typed.js'; // Corrected import statement for Typed
-
+import { HiOutlineClipboardDocumentList } from "react-icons/hi2";
 import Oshpaz from "../assets/oshpaz.jpg";
 import Svarka from "../assets/svarka.jpg";
 import Gaz from "../assets/gaz.jpg";
@@ -14,6 +14,8 @@ import Prava from "../assets/prava.jpg";
 import Bank from "../assets/bank.png";
 import Icons from '../Components/Icons';
 import Yangiliklar from "./Yangiliklar"
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+
 import { NavLink } from 'react-router-dom';
 
 
@@ -218,24 +220,35 @@ ustasi
             <Yangiliklar/>
           </div>
         </section>
-      <section className='w-[100%] bg-sky-500'>
+      <section className='w-[100%] bg-blue-900 pt-[50px] text-[#fff] pb-[50px]'>
     <div className="container">
-      <div className="flex ">
+      <div className="md:flex md:items-center md:justify-between flex-wrap  md:pl-[100px] pr-[100px]  ">
         
-<img src="" alt="img" />
-<div className="flex flex-col ">
+<div className="flex items-center gap-[20px] flex-wrap pb-[20px] md:pb-0 ">
+      <HiOutlineClipboardDocumentList className='text-[48px]' />
+      <div className="flex flex-col flex-wrap  ">
+
 <h1>
   Direktor virtual qabulxonasi
 </h1>
 <p>
 Ariza, shikoyat, taklif yoki fikrlaringiz bormi?
 </p>
+      </div>
+</div>
+<div className="flex">
+  <NavLink to=''>
+
+  <button className='w-[200px] border h-[55px]'>Ariza yuborish</button>
+  </NavLink>
 </div>
 
       </div>
     </div>
       </section>
-        
+        <section>
+
+        </section>
       </main>
     </>
   );

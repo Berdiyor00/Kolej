@@ -21,6 +21,8 @@ import Prava from './Pages/Prava';
 import Turarjoy from './Pages/Turarjoy';
 import AllNews from './Pages/AllNews';
 import Logo from "./assets/logo.jpg";
+import { IoIosArrowForward } from "react-icons/io";
+
 
 
 function App() {
@@ -51,52 +53,54 @@ function App() {
         <Route path='/turarjoy' element={<Turarjoy/>}/>
         <Route path='/news' element={<AllNews/>}/>
       </Routes>
-      <footer className='w-[100%] h-[300px] bg-[red] mt-[70px] '>
+      <footer className='w-[100%] h-[350px] bg-[#031f1f55] mt-[70px] text-[#fff] pt-[30px]  '>
                 <div className="container">
-                  <div className="flex">
+                  <div className="flex items-baseline justify-between flex-wrap ">
                     
-                  <div className="flex flex-col items-center">
-                   <img src={Logo} alt="" className='md:cursor-pointer w-[100px] rounded-[50%] ' />
+                  <div className="flex flex-col items-center pr-[60px]">
+                   <img src={Logo} alt="" className='md:cursor-pointer w-[100px] rounded-[50%] pb-[10px]  ' />
                    <h2>Koson tuman 1-sonli kasb hunar maktabi</h2>
                   </div>
                   <div className="flex flex-col">
                     <p className='text-[24px]'>
                       Sahifalar
                     </p>
-<ul>
-  <li>
-    <NavLink to='/tarix'>
-      Kasb-Hunar Maktabi
+<ul >
+  <li >
+    <NavLink to='/tarix' className="flex items-center">
+   < IoIosArrowForward/> Kasb-Hunar Maktabi
     </NavLink>
   </li>
   <li>
-    <NavLink to='/raxbariyat'>
-     Tuzulma
+    <NavLink to='/raxbariyat' className="flex items-center">
+    < IoIosArrowForward/> Tuzulma
     </NavLink>
   </li>
   <li>
-    <NavLink>
-    Faoliyat
+    <NavLink to="/tarix" className="flex items-center">
+    < IoIosArrowForward/> Faoliyat
     </NavLink>
   </li>
   <li>
-    <NavLink>
-   Qabul-{year}
+    <NavLink to="/qabul" className="flex items-center">
+    < IoIosArrowForward/> Qabul-{year}
     </NavLink>
   </li>
   <li>
-    <NavLink>
-    Talabalar
+    <NavLink to='/talabalar' className="flex items-center">
+    < IoIosArrowForward/> Talabalar
     </NavLink>
   </li>
   <li>
-    <NavLink>
- Interaktiv xizmatlar
+    <NavLink to='/xizmatlar' className="flex items-center">
+    < IoIosArrowForward/>Interaktiv xizmatlar
     </NavLink>
   </li>
 </ul>
                   </div>
+<div className="flex flex-col md:w-[50%]">
 
+</div>
                   </div>
                 </div>
             </footer>
