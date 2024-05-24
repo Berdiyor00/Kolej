@@ -248,6 +248,12 @@ Ariza, shikoyat, taklif yoki fikrlaringiz bormi?
     </div>
       </section>
         <section className='w-[100%] bg-white mt-[40px] mb-[-20px]'>
+          <div className="container">
+
+          <p className='text-[28px] pt-[20px] pb-[20px] font-mono font-medium'>
+            Foydali Linklar
+          </p>
+          </div>
   <Marquee direction='left' speed={40}>
 <div className="flex flex-col">
 <Marque/>

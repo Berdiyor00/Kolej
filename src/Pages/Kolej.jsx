@@ -8,11 +8,9 @@ const Kolej = () => {
   </div>
   <div className="container">
     <div className="flex items-center justify-center">
-<div className="texts">
+<div className="pt-[30px]">
   
-<h1 className='text-[30px] text-center text-[#fff]'>
-  Hello
-</h1>
+
 <p className='text-[#fff] text-justify  capitalize text-[36px]'>
 Koson kompyuter texnologiyalari kasb-hunar kolleji O`zbekiston Respublikasi Oliy va O`rta maxsus ta`lim  vazirligi, Respublika o`rta maxsus, kasb-hunar ta`limi markazining 2002 yil  30 noyabrdagi 325-sonli buyrug`iga binoan tashkil etilgan. 
 Keyinchalik

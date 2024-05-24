@@ -53,6 +53,7 @@ function App() {
         <Route path='/turarjoy' element={<Turarjoy/>}/>
         <Route path='/news' element={<AllNews/>}/>
       </Routes>
+      
       <footer className='w-[100%] h-[350px] bg-[#031f1f55] mt-[70px] text-[#fff] pt-[30px]  '>
                 <div className="container">
                   <div className="flex items-baseline justify-between flex-wrap ">
