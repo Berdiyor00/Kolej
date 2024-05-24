@@ -14,9 +14,11 @@ import Prava from "../assets/prava.jpg";
 import Bank from "../assets/bank.png";
 import Icons from '../Components/Icons';
 import Yangiliklar from "./Yangiliklar"
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
+import Marquee from "react-fast-marquee";
 import { NavLink } from 'react-router-dom';
+import Marque from './Marque';
+import Marquee2 from './Marquee2';
 
 
 function ButtonDarkExample() {
@@ -65,9 +67,9 @@ function ButtonDarkExample() {
 <div className="relative group cursor-pointer">
 
   <img src={Oshpaz} alt="Your Image" className="w-[300px] rounded  object-cover h-[350px]"/>
-  <div className="absolute inset-0 bg-black bg-opacity-60 text-white opacity-0 group-hover:opacity-100 transition-[1s] flex flex-col items-center justify-center">
-    <p className='font-mono text-[28px]'>Oshpaz qandolatchi</p>
-    <button className="border text-center w-[120px] mt-[20px]">
+  <div className="absolute inset-0 bg-black bg-opacity-60 text-wFhite opacity-0 group-hover:opacity-100 transition-[1s] flex flex-col items-center justify-center">
+    <p className='font-mono text-[28px] text-[#fff]'>Oshpaz qandolatchi</p>
+    <button className="border text-center  text-[#fff] w-[120px] mt-[20px]  hover:bg-teal-900">
       Yana...
     </button>
   </div>
@@ -82,7 +84,7 @@ function ButtonDarkExample() {
   <img src={Svarka} alt="Your Image" className="w-[300px] rounded object-cover h-[350px]"/>
   <div className="absolute inset-0 bg-black bg-opacity-80 text-white opacity-0 group-hover:opacity-100 transition-[1s] flex  flex-col items-center justify-center">
     <p className=' text-center font-mono text-[24px]'>Payvandlovchi (elektrgazpayvandlash ishlari)</p>
-    <button className="border text-center w-[120px] mt-[20px]">
+    <button className="border text-center w-[120px] mt-[20px]  hover:bg-teal-900">
       Yana...
     </button>
   </div>
@@ -97,7 +99,7 @@ function ButtonDarkExample() {
   <img src={Gaz} alt="Your Image" className="w-[300px] rounded object-cover h-[350px]"/>
   <div className="absolute inset-0 bg-black bg-opacity-70 text-white opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center">
     <p  className=' text-center font-mono text-[24px]'>Gaz jihozlari chilangari</p>
-    <button className="border text-center w-[120px] mt-[20px]">
+    <button className="border text-center w-[120px] mt-[20px]  hover:bg-teal-900">
       Yana...
     </button>
   </div>
@@ -112,7 +114,7 @@ function ButtonDarkExample() {
   <img src={Tikuvchi} alt="Your Image" className="w-[300px] rounded object-cover h-[350px]"/>
   <div className="absolute inset-0 bg-black bg-opacity-70  text-white opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center">
     <p className=' text-center font-mono text-[24px]'>Tikuvchi</p>
-    <button className="border text-center w-[120px] mt-[20px]">
+    <button className="border text-center w-[120px] mt-[20px]  hover:bg-teal-900">
       Yana...
     </button>
   </div>
@@ -129,7 +131,7 @@ function ButtonDarkExample() {
     <p className=' text-center font-mono text-[24px]'>Raqamli axborotlarni qayta ishlash 
 ustasi
 </p>
-<button className="border text-center w-[120px] mt-[20px]">
+<button className="border text-center w-[120px] mt-[20px]  hover:bg-teal-900">
       Yana...
     </button>
   </div>
@@ -144,7 +146,7 @@ ustasi
   <img src={Tokar} alt="Your Image" className="w-[300px] rounded object-cover h-[350px]"/>
   <div className="absolute inset-0 bg-black bg-opacity-80 text-white opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center">
     <p className=' text-center font-mono text-[24px]'>Tokar</p>
-    <button className="border text-center w-[120px] mt-[20px]">
+    <button className="border text-center w-[120px] mt-[20px]  hover:bg-teal-900">
       Yana...
     </button>
   </div>
@@ -159,7 +161,7 @@ ustasi
   <img src={Traktor} alt="Your Image" className="w-[300px] rounded object-cover h-[350px]"/>
   <div className="absolute inset-0 bg-black bg-opacity-80 text-white opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center">
     <p className=' text-center font-mono text-[24px]'>Traktorchi-mashinist</p>
-    <button className="border text-center w-[120px] mt-[20px]">
+    <button className="border text-center w-[120px] mt-[20px]  hover:bg-teal-900">
       Yana...
     </button>
   </div>
@@ -174,7 +176,7 @@ ustasi
   <img src={Prava} alt="Your Image" className="w-[300px] rounded object-cover h-[350px]"/>
   <div className="absolute inset-0 bg-black bg-opacity-80 text-white opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center">
     <p  className=' text-center font-mono text-[24px]'>Avtomobil dvigatellarini tashxislashva ta’mirlash</p>
-    <button className="border text-center w-[120px] mt-[20px]">
+    <button className="border text-center w-[120px] mt-[20px] hover:bg-teal-900">
       Yana...
     </button>
   </div>
@@ -189,7 +191,7 @@ ustasi
   <img src={Turarjoy} alt="Your Image" className="w-[300px] rounded object-cover h-[350px]"/>
   <div className="absolute inset-0 bg-black bg-opacity-80 text-white opacity-0 group-hover:opacity-100  flex flex-col items-center justify-center">
     <p  className=' text-center font-mono text-[24px]'>Turar-joy kommunal xo’jaligi ustasi</p>
-    <button className="border text-center w-[120px] mt-[20px]">
+    <button className="border text-center w-[120px] mt-[20px]  hover:bg-teal-900">
       Yana...
     </button>
   </div>
@@ -220,9 +222,9 @@ ustasi
             <Yangiliklar/>
           </div>
         </section>
-      <section className='w-[100%] bg-blue-900 pt-[50px] text-[#fff] pb-[50px]'>
+      <section className='w-[100%] bg-blue-900 pt-[50px] mt-[20px] text-[#fff] pb-[50px]'>
     <div className="container">
-      <div className="md:flex md:items-center md:justify-between flex-wrap  md:pl-[100px] pr-[100px]  ">
+      <div className="md:flex md:items-center md:justify-between gap-[20px] flex-wrap md:pl-[100px] pr-[100px]  ">
         
 <div className="flex items-center gap-[20px] flex-wrap pb-[20px] md:pb-0 ">
       <HiOutlineClipboardDocumentList className='text-[48px]' />
@@ -237,16 +239,29 @@ Ariza, shikoyat, taklif yoki fikrlaringiz bormi?
       </div>
 </div>
 <div className="flex">
-  <NavLink to=''>
-
-  <button className='w-[200px] border h-[55px]'>Ariza yuborish</button>
+  <NavLink to='/raxbariyat'>
+  <button className='w-[200px] border h-[55px] hover:bg-[#fff] hover:text-[#000] hover:border-y-cyan-900 transition-[1s]'>Ariza yuborish</button>
   </NavLink>
 </div>
 
       </div>
     </div>
       </section>
-        <section>
+        <section className='w-[100%] bg-white mt-[40px] mb-[-20px]'>
+  <Marquee direction='left' speed={40}>
+<div className="flex flex-col">
+<Marque/>
+</div>
+  </Marquee>
+  <Marquee direction='right' speed={50}>
+
+<Marquee2 />
+
+</Marquee>
+
+  <Marquee direction='left' speed={40}>
+<Marquee2 />
+</Marquee>
 
         </section>
       </main>

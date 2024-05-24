@@ -4,9 +4,7 @@ import { Accordion, AccordionContent, AccordionPanel, AccordionTitle } from 'flo
 const Hujjat = () => {
   return (
     <div className='container pt-[100px]'>
-        <h1 className='text-[50px] text-[#fff]'>
-            Hello
-        </h1>
+       
         <Accordion collapseAll>
       <AccordionPanel>
         <AccordionTitle>What is Flowbite?</AccordionTitle>
@@ -17,12 +15,7 @@ const Hujjat = () => {
           </p>
           <p className="text-gray-500 dark:text-gray-400">
             Check out this guide to learn how to&nbsp;
-            <a
-              href="https://flowbite.com/docs/getting-started/introduction/"
-              className="text-cyan-600 hover:underline dark:text-cyan-500"
-            >
-              get started&nbsp;
-            </a>
+        
             and start developing websites even faster with components on top of Tailwind CSS.
           </p>
         </AccordionContent>
@@ -36,15 +29,18 @@ const Hujjat = () => {
           </p>
           <p className="text-gray-500 dark:text-gray-400">
             Check out the
-            <a href="https://flowbite.com/figma/" className="text-cyan-600 hover:underline dark:text-cyan-500">
-              Figma design system
-            </a>
+        
             based on the utility classes from Tailwind CSS and components from Flowbite.
           </p>
         </AccordionContent>
       </AccordionPanel>
       <AccordionPanel>
-        <AccordionTitle>What are the differences between Flowbite and Tailwind UI?</AccordionTitle>
+        <AccordionTitle >
+          <p className='text-[#fff]'>
+            
+            What are the differences between Flowbite and Tailwind UI?
+            </p>
+            </AccordionTitle>
         <AccordionContent>
           <p className="mb-2 text-gray-500 dark:text-gray-400">
             The main difference is that the core components from Flowbite are open source under the MIT license, whereas
@@ -56,22 +52,7 @@ const Hujjat = () => {
             technical reason stopping you from using the best of two worlds.
           </p>
           <p className="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
-          <ul className="list-disc pl-5 text-gray-500 dark:text-gray-400">
-            <li>
-              <a href="https://flowbite.com/pro/" className="text-cyan-600 hover:underline dark:text-cyan-500">
-                Flowbite Pro
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://tailwindui.com/"
-                rel="nofollow"
-                className="text-cyan-600 hover:underline dark:text-cyan-500"
-              >
-                Tailwind UI
-              </a>
-            </li>
-          </ul>
+         
         </AccordionContent>
       </AccordionPanel>
     </Accordion>
