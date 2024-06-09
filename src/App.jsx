@@ -22,6 +22,9 @@ import Turarjoy from './Pages/Turarjoy';
 import AllNews from './Pages/AllNews';
 import Logo from "./assets/logo.jpg";
 import { IoIosArrowForward } from "react-icons/io";
+import AdminPanel from './Pages/Admin';
+
+
 
 
 
@@ -36,6 +39,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path="/your-component" element={<YourComponent />} />
+<Route path='/admin' element={<AdminPanel/>}/>
         <Route path="/article/:articleId" element={<ArticleDetailComponent />} />
         <Route path='/tarix' element={<Kolej/>}/>
         <Route path='/hujat' element={<Hujjat/>}/>
@@ -52,6 +56,7 @@ function App() {
         <Route path='/prava' element={<Prava/>}/>
         <Route path='/turarjoy' element={<Turarjoy/>}/>
         <Route path='/news' element={<AllNews/>}/>
+
       </Routes>
       
       <footer className='w-[100%] h-[350px] bg-[#031f1f55] mt-[70px] text-[#fff] pt-[30px]  '>
