@@ -1,9 +1,9 @@
-// Admin.jsx
 import React, { useState, useEffect } from 'react';
 
 const Admin = () => {
   const [articles, setArticles] = useState([]);
   const [title, setTitle] = useState('');
+  const [subtitle, setSubtitle] = useState('');
   const [content, setContent] = useState('');
   const [imageURL, setImageURL] = useState('');
 
@@ -22,15 +22,23 @@ const Admin = () => {
   };
 
   const handleAddArticle = () => {
-    if (!title || !content || !imageURL) {
+    if (!title || !subtitle || !content || !imageURL) {
       alert("Ma'lumotlarni to'liq kiriting!");
       return;
     }
-    const newArticle = { id: Date.now(), title, content, imageURL }; // Yangi maqolaga id beramiz
+    const newArticle = { 
+      id: Date.now(), 
+      title, 
+      subtitle, 
+      content, 
+      imageURL,
+      timestamp: new Date().toLocaleString() // Yangi maqolaga vaqtni qo'shamiz
+    }; 
     const updatedArticles = [...articles, newArticle];
     setArticles(updatedArticles);
     localStorage.setItem('articles', JSON.stringify(updatedArticles));
     setTitle('');
+    setSubtitle('');
     setContent('');
     setImageURL('');
   };
@@ -52,6 +60,13 @@ const Admin = () => {
       />
       <input
         type="text"
+        value={subtitle}
+        onChange={(e) => setSubtitle(e.target.value)}
+        placeholder="Maqola subtitri"
+        required
+      />
+      <input
+        type="text"
         value={content}
         onChange={(e) => setContent(e.target.value)}
         placeholder="Maqola mazmuni"
@@ -66,7 +81,9 @@ const Admin = () => {
         <div key={article.id}>
           <img src={article.imageURL} alt={article.title} />
           <h2>{article.title}</h2>
+          <h3>{article.subtitle}</h3>
           <p>{article.content}</p>
+          <p>{article.timestamp}</p>
           <button onClick={() => handleDeleteArticle(article.id)} className='bg-red-300 text-[red]'>O'chirish</button>
         </div>
       ))}

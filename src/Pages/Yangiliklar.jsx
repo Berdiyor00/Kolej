@@ -58,12 +58,19 @@ const YourComponent = () => {
           <div className="md:w-[500px] h-[600px] bg-white">
           <ul>
   {articles.map((article, index) => (
-    <li key={index}>
-      <img src={article.imageURL} alt={article.title} />
+    <div key={index} className='flex items-center justify-between pl-[10px] pr-[10px] pt-[5px]'>
+      <div className="flex flex-col">
+      <img src={article.imageURL} alt={article.title} className='w-[220px] h-[250px] object-cover' />
       <h2>{article.title}</h2>
       <p>{article.content}</p>
+      </div>
+      <div className="flex flex-col">
+      <img src={article.imageURL} alt={article.title} className='w-[220px] h-[250px] object-cover' />
+      <h2>{article.title}</h2>
+      <p>{article.content}</p>
+      </div>
       {/* Rasmni chiqarish */}
-    </li>
+    </div>
   ))}
 </ul>
 
