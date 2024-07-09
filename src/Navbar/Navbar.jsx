@@ -21,7 +21,6 @@ const Navbar = () => {
       <div className="flex items-center container font-medium justify-around">
         <div className="z-50 p-5 md:w-auto w-full flex justify-between">
           <NavLink to="/">
-
           <img src={Logo}  alt="logo" className="md:cursor-pointer h-9 rounded-[50%]" />
           </NavLink>
           {/* Mobile menu button */}
@@ -35,9 +34,9 @@ const Navbar = () => {
         {/* Desktop navigation */}
         <ul className="md:flex hidden uppercase items-baseline gap-8 font-[Poppins]">
           <li>
-            <Link to="/" className="py-7 px-3 inline-block">
+            <NavLink to="/" className="py-7 px-3 inline-block">
               Bosh qisim
-            </Link>
+            </NavLink>
           </li>
           
           <NavLinks />
@@ -50,9 +49,9 @@ const Navbar = () => {
           `}
         >
           <li>
-            <Link to="/" className="py-7 px-3 inline-block">
+            <NavLink to="/" className="py-7 px-3 inline-block">
               Bosh qisi
-            </Link>
+            </NavLink>
           </li>
           <NavLinks />
           <div className="py-5"></div>
